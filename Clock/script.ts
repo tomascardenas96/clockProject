@@ -14,11 +14,11 @@
         let minutes: number = now.getMinutes();
         let seconds: number = now.getSeconds();
 
-//Here i do an array for weekday and monthdate, to iterate in both.
+//Here i did an array for weekday and monthdate, to iterate in both.
         let weekDay:string[] = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
         let monthDate:string[] = ["Enero", "Febrero", "Marzo", "Abril", "Marzo", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
-//now.getDay() and getMonth() functions return a number, so i iterate in weekDay / monthdate arrays to show the correct information as 
+//now.getDay() and getMonth() functions return a number, so they will iterate in weekDay / monthdate arrays to show the correct information as 
 //appropriate. And year variable returns current year.
         let day: string = weekDay[now.getDay() - 1];
         let month: string = monthDate[now.getMonth()];
